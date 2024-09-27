@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Matrix Calculator</h1>
+
+    <div class="matrix-section">
+        <h2>Matrix A</h2>
+        <table id="matrixA">
+            <tr>
+                <td><input type="number" id="a00" class="matrix-input"></td>
+                <td><input type="number" id="a01" class="matrix-input"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="a10" class="matrix-input"></td>
+                <td><input type="number" id="a11" class="matrix-input"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="matrix-section">
+        <h2>Matrix B</h2>
+        <table id="matrixB">
+            <tr>
+                <td><input type="number" id="b00" class="matrix-input"></td>
+                <td><input type="number" id="b01" class="matrix-input"></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="b10" class="matrix-input"></td>
+                <td><input type="number" id="b11" class="matrix-input"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="button-container">
+        <button onclick="addMatrices()">Add</button>
+        <button onclick="subtractMatrices()">Subtract</button>
+        <button onclick="multiplyMatrices()">Multiply</button>
+    </div>
+
+    <h2>Result</h2>
+    <div id="result" class="result"></div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
